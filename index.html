@@ -62,6 +62,23 @@
       text-align: center;
       color: var(--white-foam);
     }
+    /* Default styles (desktop) */
+.map-container {
+  width: 100%; /* example if side by side with another div */
+  margin: 1%;  /* spacing between divs */
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .map-container {
+    width: 100%;      /* take full width on mobile */
+    display: block;   /* ensure it stacks */
+    margin: 10px 0;   /* vertical spacing */
+  }
+}
+
     
     /* Gradient overlay for better text readability */
     .hero-header::after {
@@ -2146,7 +2163,6 @@ html, body {
           </div>
         </div>
       </div>
-      <br>
       <div class="map-container">
         <iframe src="https://www.google.com/maps?q=Hammamet+Beach,+Mrezga,+Hammamet+8050,+Tunisia&output=embed&zoom=19" width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <a href="https://www.google.com/travel/search?ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjqDxABGBISBwjqDxABGBMYATICEAAqBwoFOgNUTkQ&qs=CAEyE0Nnb0k5TjIzNmN6UHVyRUpFQUU4CEIJEal3mQViExn0QgkR5j-W5U4EC4Q&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls" target="_blank" class="primary-btn" style="display: inline-block; margin-top: 15px; width: 100%; text-align: center;">
@@ -2156,6 +2172,7 @@ html, body {
     </div>
   </div>
 </section>
+
 
 <footer>
   <div style="max-width: 1200px; margin: 0 auto; padding: 2rem 0;">
